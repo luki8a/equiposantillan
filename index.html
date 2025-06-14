@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipo Santillán - Boxeo Profesional</title>
+    <meta name="description" content="Clases de boxeo profesional en [Ciudad]. Profesor Santillán. Boxeo para principiantes, avanzado y femenino.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo.png">
+
+    <!-- ...otros tags... -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo.png">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+       <!-- =========================
+         HEADER RESPONSIVE CON HAMBURGUESA Y ANIMACIÓN CLOSE
+    ========================= -->
+    <header>
+      <nav class="nav-bar">
+        <!-- Logo -->
+        <a href="#" class="logo-link">
+          <img src="img/logo.png" alt="Logo" class="logo-header">
+        </a>
+        <!-- Botón hamburguesa (solo mobile) -->
+        <button id="burgerBtn" class="burger" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <!-- Menú principal (desktop) -->
+        <ul class="nav-menu-desktop">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#entrenador">Entrenador</a></li>
+          <li><a href="#programas">Programas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <!-- Menú mobile -->
+        <div id="mobileMenu" class="mobile-menu">
+          <!-- Botón cerrar animado -->
+          <button id="closeBtn" class="close-menu" aria-label="Cerrar menú">
+            <span class="close-bar"></span>
+            <span class="close-bar"></span>
+          </button>
+          <ul class="nav-menu-mobile">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#entrenador">Entrenador</a></li>
+            <li><a href="#programas">Programas</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+                <!-- HERO ANIMADO EQUIPO SANTILLÁN -->
+        <section id="inicio" class="hero-slider" aria-label="Presentación Equipo Santillán">
+          <!-- Slides -->
+          <article class="hero-slide active" aria-hidden="false">
+            <img src="img/galeria/foto-hero.png" alt="Parque con banderín de Equipo Santillán de Boxeo" class="hero-img" />
+            <div class="hero-content">
+              <h1>Clases de <span class="highlight">Boxeo</span> para Todos los Niveles</h1>
+              <p>Puedes aprender boxeo desde cero hasta competitivo. Entrena con un profesional y recibe atención personalizada</p>
+              <a href="#contacto" class="hero-cta">Quiero entrenar</a>
+            </div>
+          </article>
+          <article class="hero-slide" aria-hidden="true">
+            <img src="img/galeria/ring-tribuna.webp" alt="Profesor entrenando a un alumno de boxeo" class="hero-img" />
+            <div class="hero-content">
+              <h2>Entrenamiento Personalizado</h2>
+              <p>El profe Santillán te acompaña en cada paso. Mejorá tu técnica y superá tus límites con atención personalizada.</p>
+              <a href="#programas" class="hero-cta alt">Ver programas</a>
+            </div>
+          </article>
+          <!-- Controles -->
+          <div class="hero-controls" aria-label="Controles del slider">
+            <button class="hero-dot active" aria-label="Ver sección 1"></button>
+            <button class="hero-dot" aria-label="Ver sección 2"></button>
+          </div>
+        </section>
+
+        <!-- About Section -->
+                <section id="entrenador" class="about">
+            <div class="about-imgs">
+                <img src="img/galeria/proteccion.webp" alt="Profesor Gustavo Santillán">
+                <img src="img/galeria/gustavo-santillan.webp" alt="Profesor Santillán en acción">
+            </div>
+            <div class="about-content">
+                <h2>Tu Entrenador Profesional</h2>
+                <p>
+                    Soy un entrenador de boxeo matriculado por la Federación Argentina de Boxeo, con experiencia en gimnasios y clases particulares. Actualmente, entreno a un boxeador profesional, lo que demuestra mi compromiso con el desarrollo de atletas de alto rendimiento. Mi objetivo es ayudarte a alcanzar tus metas, sin importar tu nivel.
+                </p>
+            </div>
+        </section>
+
+        <!-- Programs Section -->
+        <section id="programas" class="programs">
+            <h2>Nuestros Programas de Entrenamiento</h2>
+            <ul>
+                <li>
+                    <img src="img//programas/boxeo-para-principiantes.png" alt="Boxeo para Principiantes">
+                    <span>Boxeo para Principiantes</span>
+                </li>
+                <li>
+                    <img src="img//programas/nivel-avanzado.png" alt="Nivel Avanzado">
+                    <span>Nivel Avanzado</span>
+                </li>
+                <li>
+                    <img src="img//programas/clases-personalizadas.png" alt="Clases Personalizadas">
+                    <span>Clases Personalizadas</span>
+                </li>
+                <li>
+                    <img src="img//programas/preparacion-para-competencias.png" alt="Preparación para Competencias">
+                    <span>Preparación para Competencias</span>
+                </li>
+                <li>
+                    <img src="img//programas/boxeo-funcional.png" alt="Boxeo Funcional">
+                    <span>Boxeo Funcional</span>
+                </li>
+                <li>
+                    <img src="img//programas/boxeo-femenino.png" alt="Boxeo Femenino">
+                    <span>Boxeo Femenino</span>
+                </li>
+            </ul>
+        </section>
+
+    <!-- SECCIÓN DE BENEFICIOS EN CARDS GRANDES, OSCURAS Y MODERNAS -->
+    <section class="beneficios-boxeo">
+      <div class="beneficios-container">
+        <h2 class="beneficios-titulo">Beneficios de Entrenar Boxeo con Nosotros</h2>
+        <div class="beneficios-cards">
+          <!-- Card 1 -->
+          <article class="card-beneficio">
+            <img src="img/beneficios/boxeo-para-todos.png" alt="Boxeo para todos" class="card-img">
+            <h3 class="card-titulo">El Boxeo es para Todos</h3>
+            <p class="card-texto">
+              No importa tu edad o experiencia, <span class="resaltado">cualquier persona puede empezar</span> y disfrutar de los beneficios del boxeo.
+            </p>
+          </article>
+          <!-- Card 2 -->
+          <article class="card-beneficio">
+            <img src="img//beneficios/horarios-flexibles.png" alt="Horarios flexibles" class="card-img">
+            <h3 class="card-titulo">Horarios <br>Flexibles</h3>
+            <p class="card-texto">
+              Entrená cuando puedas: tenemos clases por la mañana, tarde y noche para <span class="resaltado">adaptarnos a tu rutina</span>.
+            </p>
+          </article>
+          <!-- Card 3 -->
+          <article class="card-beneficio">
+            <img src="img//gimnasios-plazas.png" alt="Clases al aire libre" class="card-img">
+            <h3 class="card-titulo">Clases al Aire Libre o Gimnasios</h3>
+            <p class="card-texto">
+              Ya sea en <span class="resaltado">gimnasios</span> o al <span class="resaltado">aire libre en parques</span> y espacios abiertos, disfrutá de entrenamientos ideales para tu salud física y mental.
+            </p>
+          </article>
+          <!-- Card 4 -->
+          <article class="card-beneficio">
+            <img src="img/beneficios/entrenamientospersonalizados.jpeg" alt="Entrenamiento personalizado" class="card-img">
+            <h3 class="card-titulo">Entrenamiento Personalizado</h3>
+            <p class="card-texto">
+              Planes adaptados a <span class="resaltado">tus objetivos</span> y nivel, con seguimiento profesional constante.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery-section" class="gallery">
+            <h2>Nuestra Galería: Trabajo y Pasión</h2>
+            <div class="gallery-grid">
+                <img src="img/galeria/agua-cabezal-santillan.webp" alt="Entrenamiento en grupo">
+                <img src="img/galeria/foto-hero.png" alt="Alumnos practicando golpes">
+                <img src="img/galeria/gustavo-santillan.webp" alt="Clase de boxeo funcional">
+                <img src="img/galeria/proteccion.webp" alt="Competencia amateur">
+                <img src="img/galeria/ring-tribuna.webp" alt= "Victoria en el ring">
+                <img src="img/galeria/ring.webp" alt="Instalaciones del gimnasio">
+                <img src="img/galeria/agua-cabezal-santillan.webp" alt="Zona de pesas y sacos">
+                <img src="img/galeria/foto-hero.png" alt="Alumnos felices">
+                <img src="img/galeria/gustavo-santillan.webp" alt="Equipo Santillán reunido">
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq-section" class="faq">
+            <h2>¿Tienes Preguntas? ¡Nosotros las Respondemos!</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <h3>¿Qué necesito para empezar?</h3>
+                    <p>Solo necesitas ropa cómoda y ganas de entrenar.</p>
+                </div>
+                <div class="accordion-item">
+                    <h3>¿Hay clases para niños?</h3>
+                    <p>¡Sí! Tenemos programas especiales para niños.</p>
+                </div>
+                <div class="accordion-item">
+                    <h3>¿Debo tener experiencia previa?</h3>
+                    <p>No, nuestros programas se adaptan a todos los niveles.</p>
+                </div>
+                <div class="accordion-item">
+                    <h3>¿Qué equipamiento necesito?</h3>
+                    <p>Guantes y vendas, pero si no tienes, te prestamos en el gimnasio.</p>
+                </div>
+                <div class="accordion-item">
+                    <h3>¿Puedo competir?</h3>
+                    <p>Sí, preparamos a quienes desean competir en torneos amateurs y profesionales.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonios Section -->
+                <!-- SECCIÓN DE TESTIMONIOS -->
+<section class="testimonios">
+  <div class="testimonios-container">
+    <h2 class="testimonios-titulo">Testimonios</h2>
+    <div class="testimonios-wrapper">
+      <!-- Testimonio 1 -->
+      <article class="testimonio">
+        <img src="img/galeria/proteccion.webp" alt="Juan Pérez" class="testimonial-img">
+        <p class="testimonio-texto">"Entrenar con Equipo Santillán transformó mi vida. Su dedicación y pasión se reflejan en cada clase, haciendo la diferencia en mi rutina diaria."</p>
+        <p class="testimonio-autor">- Juan Pérez</p>
+      </article>
+      <!-- Testimonio 2 -->
+      <article class="testimonio">
+        <img src="img/galeria/ring-tribuna.webp" alt="María López" class="testimonial-img">
+        <p class="testimonio-texto">"El ambiente en el gimnasio es inspirador y motivador. Hoy me siento más fuerte y seguro de mis capacidades gracias al equipo."</p>
+        <p class="testimonio-autor">- María López</p>
+      </article>
+      <!-- Testimonio 3 -->
+      <article class="testimonio">
+        <img src="img/galeria/ring.webp" alt="Juan Pérez" class="testimonial-img">
+        <p class="testimonio-texto">"Entrenar con Equipo Santillán transformó mi vida. Su dedicación y pasión se reflejan en cada clase, haciendo la diferencia en mi rutina diaria."</p>
+        <p class="testimonio-autor">- Juan Pérez</p>
+      </article>
+      <!-- Testimonio 4 -->
+      <article class="testimonio">
+        <img src="img/galeria/agua-cabezal-santillan.webp" alt="María López" class="testimonial-img">
+        <p class="testimonio-texto">"El ambiente en el gimnasio es inspirador y motivador. Hoy me siento más fuerte y seguro de mis capacidades gracias al equipo."</p>
+        <p class="testimonio-autor">- María López</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+        <!-- Contact Section -->
+        <section id="contacto" class="contact">
+    <h2>Contacto Directo</h2>
+    <div class="contact-directo">
+        <div class="contact-item">
+            <a href="mailto:equiposantillan@gmail.com" class="contact-link icon-mail" target="_blank">
+                <img src="img/redes sociales/gmail-hover.svg" alt="Email" width="36" class=".contact-icon-img">
+                <span>Escribinos por correo</span>
+            </a>
+        </div>
+        <div class="contact-item">
+            <a href="https://wa.me/1139245896" class="contact-link" target="_blank">
+                <img src="img/redes sociales/wsp-hover.svg" alt="WhatsApp" width="36">
+                <span>Hablemos por WhatsApp</span>
+            </a>
+        </div>
+        <div class="contact-item">
+            <a href="https://www.instagram.com/equiposantillan/" class="contact-link" target="_blank">
+                <img src="img/redes sociales/ig-hover.svg" alt="Instagram" width="36">
+                <span>@equiposantillan</span>
+            </a>
+        </div>
+    </div>
+    
+</section>
+
+    <footer id="footer">
+        <div class="footer-logo">
+            <img src="img/logo.png" alt="Logo Equipo Santillán" class="logo-footer">
+        </div>
+        <p class="ubicacion">
+  <img src="img/location.svg" alt="Ubicación" class="icon-ubicacion">
+  Santos Lugares, Buenos Aires, Argentina
+  <img src="img/bandera-argentina.webp" alt="Bandera de Argentina" class="icon-bandera">
+</p>
+        <p>© 2025 Equipo Santillán Boxeo Profesional</p>
+        <div class="footer-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#programas">Programas</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+                <div class="social-icons">
+            <a href="https://instagram.com/equiposantillan" target="_blank" class="icono-instagram" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/54123456789" target="_blank" class="icono-whatsapp" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+        <p class="footer-slogan">Diseñada por el <span class="resaltado">Ochoooo</span></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
