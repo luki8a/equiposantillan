@@ -40,7 +40,7 @@ whatsappBtn.href = "https://wa.me/54123456789";
 whatsappBtn.className = "whatsapp-float";
 whatsappBtn.title = "¡Chatea por WhatsApp!";
 whatsappBtn.target = "_blank";
-whatsappBtn.innerHTML = `<img src="img/Whatsapp.svg.webp" alt="WhatsApp" width="32">`;
+whatsappBtn.innerHTML = `<img src="img/WhatsApp.svg.webp" alt="WhatsApp" width="32">`;
 document.body.appendChild(whatsappBtn);
 
 
